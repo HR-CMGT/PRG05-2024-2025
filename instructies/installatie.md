@@ -3,6 +3,7 @@
 Er wordt vanuit gegaan dat [Composer](https://getcomposer.org/doc/00-intro.md) geïnstalleerd is. Ook is het aan te raden deze stappen te volgen en geen gebruik te maken van Docker of Homestead. Deze tools zijn handig als je op je machine meerdere versies van PHP naast elkaar wilt draaien met verschillende versies van Laravel, maar voor de scope van dit vak overkill. 
 
 Bij de installatie van Composer kan je composer naar de PHP installatie van Xampp laten verwijzen. Voordeel is dat alle extensies die je nodig hebt al aanstaan. 
+
 ![Select xampp during composer installation](../images/composer-with-xampp.png)
 
 ## Project aanmaken
