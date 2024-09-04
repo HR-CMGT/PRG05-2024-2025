@@ -91,7 +91,7 @@ het gebruik van [named routes](https://laravel.com/docs/11.x/routing#named-route
 - Gebruik de named route in de view van de Homepagina en test of het werkt
 - Verander de URL in de route en bekijk of de link nog steeds werkt
 
-### opdracht 
+### Opdracht 
 
 - Zoek uit hoe optional parameters werken in Laravel en maak een werkend voorbeeld. 
 - Test je voorbeeld door zowel de route met als zonder parameter te bezoeken.
