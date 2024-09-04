@@ -1,4 +1,4 @@
-# Les 2
+# Nieuw project met Route, Controller en eerste View
 
 Als je dit nog niet gedaan had tijdens de [installatie](./installatie.md), of je wilt een nieuw project aanmaken. 
 
