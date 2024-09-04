@@ -1,4 +1,4 @@
-## nieuw project aanmaken [Optioneel] 
+# Les 2
 
 Als je dit nog niet gedaan had tijdens de [installatie](./installatie.md), of je wilt een nieuw project aanmaken. 
 
