@@ -1,111 +1,59 @@
-# Les 2
+## nieuw project aanmaken [Optioneel] 
 
-## create new project
+Als je dit nog niet gedaan had tijdens de [installatie](./installatie.md), of je wilt een nieuw project aanmaken. 
 
-- create new project via terminal (composer has to be installed)
+- Maak een nieuw project aan via de terminal (composer moet geïnstalleerd zijn)
 
     ```bash
     composer create-project laravel/laravel example-app
     ```
 
-- Open project in PHPStorm
+- Open het project in PHPStorm
 
     ```bash
     php artisan serve
     ```
 
-## route (and first view)
+## route (en eerste view)
 
 - Open `web.php`
-- Explain first route.
-- Create about us route, with view.
-    - First create route without the page.
+- Maak eerst een route.
 
-    ```php
-    Route::get('/about-us', function() {
-        return 'About us';
-    });
+  ```php
+  Route::get('/about-us', function() {
+      return 'About us';
+  });
+  ```
+
+- Ga naar de browser en bekijk het resultaat van deze return. Vergeet niet `/about-us` toe te voegen aan de URL.
+- Vervang return door `return view('about-us');`
+- Maak de view aan via het contextmenu. Beweeg de muis over `'about-us'` (of gebruik `ALT` + `ENTER`) en klik op `create view`.
+- Voeg HTML-inhoud toe aan de view. Voor dummy-inhoud kun je `lorem` gebruiken en op tab drukken.
+
+    ```html
+    <h1>About us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, atque autem blanditiis consequatur cumque dolorum eaque eius eligendi enim eos est eum ex explicabo facere fugiat fugit harum id impedit in ipsa iusto laboriosam laborum magnam magni maiores minus molestias natus nemo nesciunt nihil nisi nobis non nulla numquam obcaecati odit officia officiis optio pariatur perspiciatis placeat porro praesentium quae quam quasi qui quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum.</p>
     ```
+- Bekijk het resultaat in de browser.
 
-- Show return with HTML.
-- replace return with *`return* view('about-us');`
-- create view through context menu
-- show linking to view (CMD + Click). Add tag and use lorem + tab.
+## Nieuwe Controller Aanmaken
 
-## Create new Controller
-
-- Open the terminal
+- Open de terminal
 
     ```bash
     php artisan make:controller
     ```
 
-  ![Use Upper Camel Case for the name because this is a Class file.](../images/controller-name.png)
-    *Use Upper Camel Case for the name because this is a Class file.*
+  ![Gebruik Upper Camel Case voor de naam omdat dit een Class-bestand is.](../images/controller-name.png)
+  *Gebruik Upper Camel Case voor de naam omdat dit een Class-bestand is.*
 
-- *AboutUsController*
-- Choose **Empty** controller.
+- Voer de naam *AboutUsController* in
+- Kies **Lege** controller.
 
-**Edit AboutUsController**
+**Bewerk AboutUsController**
 
-- Open /app/Https/Controllers/AboutUsController
-- Create index() method
-- return ‘Test’
-- Create route `Route::get('/test', [AboutUsController::*class*, 'index']);`
-
-## **Create resource Controller**
-
-- in terminal `php artisan make:controller`
-- name: *ProductController*
-- type: choose **Resource**
-- model **empty** (for now)
-
-  Alter index method
-
-    ```php
-    public function index()
-    {
-        return view('products.index');
-    }
-    ```
-
-- Create a view and add HTML (ALT + Enter)
-- Go to [localhost:8000/products](http://localhost:8000/products) *(why does it show a 404?)*
-
-  **Add resource routes**
-
-    ```php
-    Route::resource('products', ProductController::class);
-    ```
-
-
-## **Add parameter to route**
-
-If you want to pass extra information through a route like: https://localhost:8000/products/macbook, where "macbook" is 
-the extra information you want to pass. You can do this by adding a parameter to the route.
-
-- create route with `{ }` for query string parameters
-    ```php
-    Route::get('products/{name}', [ProductController::class, 'show']);
-    ```
-- Create the method with the parameter with the same parameter name
-
-    ```php
-    public function show($name) {
-            return view('products.show', compact('name'));
-        }
-    ```
-
-- Show the name variable in the view
-
-    ```html
-    <body>
-        <h2>Welkom {{$name}}</h2>
-    </body>
-    ```
-
-
-Resource routes have [parameters](https://laravel.com/docs/10.x/controllers#actions-handled-by-resource-controller) build in by default
-
-## Laravel Idea Plugin
-[Aanvragen licentie voor Laravel Idea plugin](laravelidea.md)
+- Open `/app/Https/Controllers/AboutUsController`
+- Maak een `index()` functie aan (Zie Laravel documentatie hoe functies aangemaakt moeten worden in een [Controller](https://laravel.com/docs/11.x/controllers#basic-controllers))
+- return de string `‘Test’`.
+- Maak een route `Route::get('/test', [AboutUsController::class, 'index']);` (niet kopiëren en plakken)
+- Controleer in de browser of de route werkt.

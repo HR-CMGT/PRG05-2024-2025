@@ -70,4 +70,6 @@ Als het goed is zie je nu de default startpagina van Laravel.
 **Gefeliciteerd, de installatie is geslaagd!**
 
 ## Laravel Idea Plugin
+Gratis bonus tip! Maak gebruik van de Laravel Idea Plugin voor PhpStorm. Deze plugin zorgt voor extra functionaliteit in PhpStorm 
+die specifiek voor Laravel is.
 [Aanvragen licentie voor Laravel Idea plugin](laravelidea.md)
