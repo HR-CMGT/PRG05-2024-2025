@@ -14,7 +14,17 @@ Bekijk de volgende video's van [Laracast](https://laracasts.com/): _30 days to l
 
 ## Opdracht 
 
-- Ga aan de slag met Layouts 
+- Ga aan de slag met Layouts **in je eigen project**
 - Zorg voor een dynamische navigatie met actieve links. Werk met Components en Partials 
 - Informatie op [Laravel.com](https://laravel.com/docs/11.x), [naslag rond Components](components.md) en [Laracast](https://laracasts.com/series/30-days-to-learn-laravel-11/) 
 - Test dd() en dump()
+
+## Opdracht
+
+Bij het aanmaken van een nieuw Laravel project heb je voor je eigen project gekozen voor Breeze. Een bezoeker kan zich 
+dus registreren en inloggen. 
+
+Voor de onderstaande opdrachten maak je gebruik van de documentatie over [Blade Templates](https://laravel.com/docs/11.x/blade).
+- Zorg in een view ervoor dat je het verschil ziet tussen een ingelogde en een niet ingelogde gebruiker.
+- Maak onderdelen alleen zichtbaar voor ingelogde gebruikers
+- Maak een lijstje met informatie en stuur deze mee aan een `View`. Toon deze d.m.v. een `loop`.
