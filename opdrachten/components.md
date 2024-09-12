@@ -1,11 +1,35 @@
 # Components
 
-Na de instructie van de [Laracast video's](https://laracasts.com/series/30-days-to-learn-laravel-11/) 
-Episode 2 + 3 heb je de volgende opzet. 
+Er wordt vanuit gegaan dat je de instructie van de [Laracast video's](https://laracasts.com/series/30-days-to-learn-laravel-11/) 
+Episode 2 + 3 hebt gevolgd en al een `Component` hebt aangemaakt.
+
+<div style="background-color: dimgray; border: 1px solid black; padding: 10px">
+📌 Wist je dat je in PHPStorm makkelijk een nieuw component kunt aanmaken? 
+Wanneer je in de view de naam van een nieuw te maken component typt, dan verschijnt het lampje. 
+
+![create-component.png](../images/create-component.png)
+
+Hiermee kan je het context-menu openen. Dit kan ook door op de naam van het component te gaan staan en de shortcut 
+ALT + ENTER te gebruiken. Hier heb je 2 opties: 
+
+1. Create Blade Component (Blade file only)
+2. Create Blade Component (Class and Blade file)
+
+De eerste optie maakt de components folder aan (als deze er nog niet is) `resources/views/components` en maakt 
+vervolgens een nieuw bestand aan met de naam van het component. Dit gebruik je in de meeste gevallen. Deze `components`
+folder is de standaard locatie voor components.
+
+De tweede optie maakt ook een nieuwe Class aan in de Components folder (`app/View/Components`). Dit is handig als je 
+een component wilt maken die meer functionaliteit heeft dan alleen een view en/of als je een custom locatie wilt 
+gebruiken voor je component. Bijvoorbeeld `resources/views/layouts/app.blade.php`
+</div>
+
+Na de instructie van de [Laracast video's](https://laracasts.com/series/30-days-to-learn-laravel-11/) heb je de
+volgende opzet.
 
 _Homepagina_
 ```html
-<body>
+<x-layout>
     <h1>Welcome to the home page</h1>
 
     <nav>
@@ -15,7 +39,7 @@ _Homepagina_
             <x-navlink>Contact</x-navlink>
         </ul>
     </nav>
-</body>
+</x-layout>
 ```
 
 _Nav link Component_
