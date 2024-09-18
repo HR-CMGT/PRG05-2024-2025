@@ -60,3 +60,11 @@ Deze opdracht kan je meteen toepassen in je eigen project of je kunt verder gaan
 5. Geef de models mee aan de `View`.
 6. Gebruik een loop om alle models te tonen in de `View`.
 
+## Opdracht - Take the next step
+
+Ga verder met het bewerken, verwijderen van de Models. Je kunt ook Models aan maken en daarbij ook direct de **Resource Controller** en de **Seeder**. Wil je weten welke mogelijkheden er zijn dan kan je voor elk artisan commando het woordje `help` schrijven. Bijvoorbeeld
+```bash
+php artisan help make:model
+```
+
+Wees gerust, je kunt niks stuk maken. Je kunt dus helemaal los gaan 🤪. Zeker als je regelmatig commit in GIT, heb je altijd een mogelijkheid om naar een vorige versie terug te gaan. 
