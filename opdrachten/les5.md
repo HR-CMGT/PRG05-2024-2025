@@ -67,4 +67,9 @@ Ga verder met het bewerken, verwijderen van de Models. Je kunt ook Models aanmak
 php artisan help make:model
 ```
 
-Wees gerust, je kunt niks stuk maken. Je kunt dus helemaal los gaan 🤪. Zeker als je regelmatig commit in GIT, heb je altijd een mogelijkheid om naar een vorige versie terug te gaan. 
+Wees gerust, je kunt niks stuk maken. Je kunt dus helemaal los gaan 🤪. Zeker als je regelmatig commit in GIT, heb je altijd een mogelijkheid om naar een vorige versie terug te gaan of door in je project een **Rollback** te doen. Je kunt dit zelf proberen. 
+- Commit (en push) eerst de wijzigingen tot nu toe.
+- Maak een wijziging in je project. Maak bijvoorbeeld een `View` aan en vul deze met een standaard HTML-pagina.
+- Ga in PHPStorm naar `Git > Uncommitted Changes > Rollback...`
+
+Je kunt nu kiezen welke bestanden je wilt _terugdraaien_ naar de versie van je laatste Commit. Tijdens een Commit kan je ook nog kiezen om per bestand een Rollback te doen, door met de rechtermuis op het bestand te klikken. 
