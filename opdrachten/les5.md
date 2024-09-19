@@ -62,7 +62,7 @@ Deze opdracht kan je meteen toepassen in je eigen project of je kunt verder gaan
 
 ## Opdracht - Take the next step
 
-Ga verder met het bewerken, verwijderen van de Models. Je kunt ook Models aan maken en daarbij ook direct de **Resource Controller** en de **Seeder**. Wil je weten welke mogelijkheden er zijn dan kan je voor elk artisan commando het woordje `help` schrijven. Bijvoorbeeld
+Ga verder met het bewerken, verwijderen van de Models. Je kunt ook Models aanmaken en met daarbij ook direct de **Resource Controller**, **Migration** en de **Seeder**. Wil je weten welke mogelijkheden er zijn dan kan je voor elk artisan commando het woordje `help` schrijven. Bijvoorbeeld
 ```bash
 php artisan help make:model
 ```
