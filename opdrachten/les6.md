@@ -78,3 +78,10 @@ Maak het ERD voor het voorbeeldproject op papier of in een app naar keuze (zoals
   [mergen](https://laravel.com/docs/11.x/requests#merging-additional-input)
 - Met de create functie van een Model kun je een nieuwe instantie van een Model aanmaken. 
   [Documentatie](https://laravel.com/docs/11.x/eloquent-relationships#the-create-method)
+
+## Opdracht - Verwijder een Product EN de bijbehorende Reviews
+
+1. Maak een knop in de `products.index` pagina om een product te verwijderen.
+2. Wanneer het product verwijderd wordt, moeten ook de bijbehorende reviews verwijderd worden. De database kan
+   dit automatisch voor je doen. In de `Migration` gebruik je hiervoor `cascadeOnDelete()`, maar dat kan alleen
+   als de `foreign key` [**Constrainted**](https://laravel.com/docs/11.x/migrations#foreign-key-constraints) is. 
