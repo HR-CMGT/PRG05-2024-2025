@@ -42,6 +42,16 @@ Maak het ERD voor het voorbeeldproject op papier of in een app naar keuze (zoals
    veld toe te voegen met `foreignIdFor()`. Zie [Laravel documentatie](https://laravel.com/docs/11.x/migrations#column-method-foreignIdFor)
 3. Koppel de `Review` aan de `Product` in het `Model`. Kies hiervoor de juiste relatie in de 
    [Laravel documentatie](https://laravel.com/docs/11.x/eloquent-relationships).
+4. Maak je een foutje met een `Migration`. Je kunt altijd een stap terug met het volgende commando. Let op je moet
+   de `down` functie in de migration goed hebben gedefinieerd.
+   ```
+   php artisan migrate:rollback
+   ```
+   Je kunt ook een aanpassing maken aan een migration en de database opnieuw laten opbouwen. Let op hiermee verwijder
+   je alle data in de database.
+   ```
+   php artisan migrate:fresh
+   ```
 
 ## Opdracht - Voeg reviews toe aan Product
 
