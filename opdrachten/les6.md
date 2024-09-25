@@ -1,5 +1,7 @@
 # Les 6
 
+Bij deze les kan je naast de documentatie van Laravel.com ook gebruik maken van https://laracasts.com/series/30-days-to-learn-laravel-11 aflevering 11
+
 In deze les gaan we in een nieuw project starten met het maken van relaties tussen modellen. We gaan kijken naar de
 volgende relaties en passen deze toe in een voorbeeld project
 
