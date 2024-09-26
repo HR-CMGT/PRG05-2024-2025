@@ -13,7 +13,7 @@ volgende relaties en passen deze toe in een voorbeeld project
     - `Category` hoort bij meerdere `Products`
 
 Vorig jaar hebben we gezien dat bij een 1-op-veel relatie het nodig was om een **foreign key** toe te voegen aan de tabel.
-Voor de veel-op-veel relatie hebben we een andere oplossing nodig en dat is een **pivot table** of **koppeltabel**.
+Voor de veel-op-veel relatie hebben we een andere oplossing nodig en dat is een **pivot table** (**koppeltabel**).
 Bij het aanmaken van de database moeten we hier dus rekening mee houden.
 
 ## Opdracht - ERD
@@ -84,4 +84,32 @@ Maak het ERD voor het voorbeeldproject op papier of in een app naar keuze (zoals
 1. Maak een knop in de `products.index` pagina om een product te verwijderen.
 2. Wanneer het product verwijderd wordt, moeten ook de bijbehorende reviews verwijderd worden. De database kan
    dit automatisch voor je doen. In de `Migration` gebruik je hiervoor `cascadeOnDelete()`, maar dat kan alleen
-   als de `foreign key` [**Constrainted**](https://laravel.com/docs/11.x/migrations#foreign-key-constraints) is. 
+   als de `foreign key` [**Constrainted**](https://laravel.com/docs/11.x/migrations#foreign-key-constraints) is.
+
+## Bonusopdracht - Veel-op-veel relatie
+
+Voor de bonusopdracht zorg je ervoor dan een `Product` meerdere `Categories` kan hebben. Een `Category` kan ook bij
+meerdere `Products` horen. Voor de functionaliteit betekent dit
+
+- Op de `products.create` pagina kun je meerdere categorieën selecteren d.m.v. checkboxes.
+- Op de `products.show` pagina toon je ook de categorieën waar het product bij hoort. Deze kan je eventueel klikbaar 
+  maken
+- Op de `products.index` pagina kun je filteren op categorieën. Toon alle categorieën en maak deze op dezelfde manier
+  klikbaar als op de `products.show` pagina. Als je met een `Component` werkt, kan je deze hergebruiken.
+
+1. Maak een `Category` Model aan met behulp van het
+   [Artisan commando](https://laravel.com/docs/11.x/eloquent#generating-model-classes). Maak ook meteen de
+   **Migration** en **Resource Controller** aan.
+2. Vul de `Migration` aan en voeg een **name** toe. 
+3. In dezelfde `Migration` voeg je ook de pivot table toe. Bedenk goed welke foreign keys hierin moeten komen. De naam
+   van de pivot table bestaat uit de enkelvoudige vorm van de twee modellen in alfabetische volgorde.
+   Deze start je met:
+   ```php
+       Schema::create('category_product', function (Blueprint $table) {
+            // code
+       });
+   ```
+4. Voeg de relaties toe aan de Models `Product` en `Category`. [Laravel documentatie](https://laravel.com/docs/11.x/eloquent-relationships).
+5. Maak slim gebruik van Componenten. 
+6. Om een categorie bij een product op te slaan, in de store functie, kun je de functie `attach()` gebruiken. 
+   [Documentatie](https://laravel.com/docs/11.x/eloquent-relationships#updating-many-to-many-relationships)
