@@ -65,7 +65,7 @@ extra informatie is die je wilt doorgeven. Dan kan je dit doen door een paramete
 - Maak een nieuwe route aan in `web.php` met `{ }` om de parameter aan te geven
     
   ```php
-    Route::get('products/{name}', function(string name) {
+    Route::get('products/{name}', function(string $name) {
         // code
     });
   ```
