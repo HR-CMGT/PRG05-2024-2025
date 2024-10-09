@@ -78,7 +78,7 @@ Hou rekening met de volgende onderdelen:
 ## Opdracht - Changelog
 
 - Maak in de map `Praktijkopdracht` een bestand `readme.md`, of
-- *Alternatief:* maak een map `changelog` in je Laravel project, en zet daarin de `readme.md` om de changelog binnen je project te houden.
+- *Alternatief:* maak een map `_changelog` in je Laravel project, en zet daarin de `readme.md` om de changelog binnen je project te houden.
 - Hierin maak je een changelog aan met de meeste recente datum bovenaan.
 - **Voor aanvang van les 4** noteer je in je changelog de User Stories en een afbeelding van je ERD. 
   - Upload de afbeelding naar een map `images` die je aanmaakt in de map van je changelog.
