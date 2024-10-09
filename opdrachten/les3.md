@@ -6,7 +6,7 @@ Bij een professionele werkwijze hoort versiebeheer. Bij versiebeheer staan al je
 
 Als backup van je code, en om samen te kunnen werken of code te delen, is het verstandig ook een kopie van je repository online te zetten. Hiervoor gebruiken we het online platform 'GitHub'.
 
-Hieronder staat een stappen plan voor het aanmaken van een nieuwe project met lokaal versiebeheer en een online koppeling.
+Hieronder staat een stappenplan voor het aanmaken van een nieuwe project met lokaal versiebeheer en een online koppeling.
 
 We beginnen met het aanmaken van een nieuw Laravel project:
 
