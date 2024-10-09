@@ -13,7 +13,7 @@ We beginnen met het aanmaken van een nieuw Laravel project:
 * Maak een map aan voor je Laravel project
 * Ga in de terminal (Powershell) naar deze map
 * Check met `pwd` of je in de juiste map staat
-* Creëer het nieuwe project: `create-project laravel/laravel .` (vergeet de punt niet, die betekent dat je het project in de huidige directory wilt zetten)
+* Creëer het nieuwe project: `composer create-project laravel/laravel .` (vergeet de punt niet, die betekent dat je het project in de huidige directory wilt zetten)
 
 Open nu je project in PHPStorm. Er komen popups met vragen om npm te draaien en om helpercode te genereren die je kunt toestaan.
 
