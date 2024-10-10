@@ -17,11 +17,11 @@ Het keyword 'get' na de dubbele punt geeft de actie aan.
 
 ### Opdracht 
 
-- Maak een route voor de 'contact' pagina
+- Maak een route voor de contactpagina
 - Laat de route een view tonen met contactinformatie
 
 ### Opdracht 
-- Zoek uit welke andere optie er mogelijk zijn achter de dubbele punt en wat deze betekenen.
+- Zoek uit welke andere opties er mogelijk zijn achter de dubbele punt en wat deze betekenen.
 
 ## Informatie meegeven aan de View 
 
