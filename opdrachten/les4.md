@@ -13,6 +13,9 @@ gegeven in de vorm van huiswerk.
 > Heb je nog geen 'kaal' oefenproject? Maak deze dan weer aan met `artisan` commando in een nieuwe map. Je hoeft het project niet toe te voegen aan GIT, mag natuurlijk wel.
 >
 > ```composer create-project laravel/laravel .```
+> 
+> **Tip!** Wanneer je aanpassingen wilt doen in de css, voer dan het volgende commando uit in een tweede terminal venster: `npm run dev`
+> **Tip!** Maak gebruik van `dd()` en `dump()` als je wilt debuggen. Je kunt dit ook in een view gebruiken maar dan met `@dd()` en `@dump()`
 
 Bekijk de volgende video's van [Laracast](https://laracasts.com/): _30 days to learn laravel 11_ 
 - [Episode 2](https://laracasts.com/series/30-days-to-learn-laravel-11/episodes/2)
@@ -20,12 +23,12 @@ Bekijk de volgende video's van [Laracast](https://laracasts.com/): _30 days to l
 - [Episode 3](https://laracasts.com/series/30-days-to-learn-laravel-11/episodes/3)
 - Maak de opdracht van Episode 3
 
-- Ga, in het oefenproject, aan de slag met Layouts.
+- Ga verder aan de slag met `layouts` en `partials`. 
 - Zorg voor een dynamische navigatie met actieve links. Werk met Components en Partials
 - Maak een lijstje met informatie en stuur deze mee aan een `View`. Toon deze d.m.v. een `loop`. De items in de loop zouden een `Component` kunnen zijn.
 - Informatie op [Laravel.com](https://laravel.com/docs/11.x), [**naslag rond Components**](components.md) en [Laracast](https://laracasts.com/series/30-days-to-learn-laravel-11/)
   
-> **Tip!** Maak gebruik van `dd()` en `dump()` als je wilt debuggen. Je kunt dit ook in een view gebruiken maar dan met `@dd()` en `@dump()`
+
 
 ## Opdracht
 
@@ -39,5 +42,5 @@ Voor de onderstaande opdrachten maak je gebruik van de documentatie over [Blade 
 - Maak onderdelen alleen zichtbaar voor ingelogde gebruikers.
 - Ga ook hier aan de slag met `Components` en zet de layout en navigatie naar je eigen hand.
 
-> **Tip!** Wanneer je aanpassingen wilt doen in de css, voer dan het volgende commando uit in een tweede terminal venster: `npm run dev`
+
 
