@@ -16,7 +16,7 @@ Bekijk de volgende video's van [Laracast](https://laracasts.com/): _30 days to l
 
 - Ga aan de slag met Layouts **in je eigen project**
 - Zorg voor een dynamische navigatie met actieve links. Werk met Components en Partials 
-- Informatie op [Laravel.com](https://laravel.com/docs/11.x), [naslag rond Components](components.md) en [Laracast](https://laracasts.com/series/30-days-to-learn-laravel-11/) 
+- Informatie op [Laravel.com](https://laravel.com/docs/11.x), [**naslag rond Components**](components.md) en [Laracast](https://laracasts.com/series/30-days-to-learn-laravel-11/) 
 - Test dd() en dump()
 
 ## Opdracht
