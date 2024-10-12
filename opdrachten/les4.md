@@ -23,10 +23,11 @@ Bekijk de volgende video's van [Laracast](https://laracasts.com/): _30 days to l
 - [Episode 3](https://laracasts.com/series/30-days-to-learn-laravel-11/episodes/3)
 - Maak de opdracht van Episode 3
 
-- Ga verder aan de slag met `layouts` en `partials`. 
+- Ga verder aan de slag met `Components` en `Partials`. 
 - Zorg voor een dynamische navigatie met actieve links. Werk met Components en Partials
-- Maak een lijstje met informatie en stuur deze mee aan een `View`. Toon deze d.m.v. een `loop`. De items in de loop zouden een `Component` kunnen zijn.
-- Informatie op [Laravel.com](https://laravel.com/docs/11.x), [**naslag rond Components**](components.md) en [Laracast](https://laracasts.com/series/30-days-to-learn-laravel-11/)
+- Maak een lijstje (`array`) met informatie en stuur deze mee aan een `View`. Toon deze d.m.v. een `loop`. Gebruik voor de items in de loop een `Component`.
+- Lees onze samenvatting over [`Components`](components.md). 
+- Aanvullende informatie vind je op [Laravel.com](https://laravel.com/docs/11.x) en [Laracast](https://laracasts.com/series/30-days-to-learn-laravel-11/)
   
 
 
