@@ -3,14 +3,14 @@
 ## Basis View en Component
 
 Bekijk de Laracast video's over het aanmaken van een simpele app met 3 pagina's. Je leert 
-wat een `View` is en hoe je een `Component` aanmaakt. Maak ook de **opdracht** die wordt
+wat een `View` is en hoe je een `component` aanmaakt. Maak ook de **opdracht** die wordt
 gegeven in de vorm van huiswerk.
 
 ## Opdracht
 
 > **_NOTE: Gebruik hiervoor een oefenproject zonder Breeze._**
 >
-> Heb je nog geen 'kaal' oefenproject? Maak deze dan weer aan met `artisan` commando in een nieuwe map. Je hoeft het project niet toe te voegen aan GIT, mag natuurlijk wel.
+> Heb je nog geen 'kaal' oefenproject? Maak deze dan weer aan met `composer` commando in een nieuwe map. Je hoeft het project niet toe te voegen aan GIT.
 >
 > ```composer create-project laravel/laravel .```
 > 
@@ -23,10 +23,10 @@ Bekijk de volgende video's van [Laracast](https://laracasts.com/): _30 days to l
 - [Episode 3](https://laracasts.com/series/30-days-to-learn-laravel-11/episodes/3)
 - Maak de opdracht van Episode 3
 
-- Ga verder aan de slag met `Components` en `Partials`. 
-- Zorg voor een dynamische navigatie met actieve links. Werk met Components
-- Maak een lijstje (`array`) met informatie en stuur deze mee aan een `View`. Toon deze d.m.v. een `loop`. Gebruik voor de items in de loop een `Component`.
-- Lees onze samenvatting over [`Components`](components.md). 
+- Ga verder aan de slag met `components` en `partials`. 
+- Zorg voor een dynamische navigatie met actieve links. Werk met components
+- Maak een lijstje (`array`) met informatie en stuur deze mee aan een `View`. Toon deze d.m.v. een `loop`. Gebruik voor de items in de loop een `component`.
+- Lees onze samenvatting over [`components`](components.md). 
 - Aanvullende informatie vind je op [Laravel.com](https://laravel.com/docs/11.x) en [Laracast](https://laracasts.com/series/30-days-to-learn-laravel-11/)
   
 
@@ -41,7 +41,7 @@ dus registreren en inloggen.
 Voor de onderstaande opdrachten maak je gebruik van de documentatie over [Blade Templates](https://laravel.com/docs/11.x/blade).
 - Zorg in een view ervoor dat je het verschil ziet tussen een ingelogde en een niet ingelogde gebruiker op een eigen gemaakte pagina. 
 - Maak onderdelen alleen zichtbaar voor ingelogde gebruikers.
-- Ga ook hier aan de slag met `Components` en zet de layout en navigatie naar je eigen hand.
+- Ga ook hier aan de slag met `components` en zet de layout en navigatie naar je eigen hand.
 
 
 
