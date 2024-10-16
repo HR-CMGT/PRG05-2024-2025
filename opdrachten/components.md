@@ -180,9 +180,9 @@ _Navigation Partial_
 ```html
 <nav>
     <ul>
-        <x-navlink href="/home" :active="request()->is('home')">Home</x-navlink>
-        <x-navlink href="/about" :active="request()->is('about')">About</x-navlink>
-        <x-navlink href="/contact" :active="request()->is('contact')">Contact</x-navlink>
+        <x-navlink href="{{route('home')}}" :active="request()->routeIs('home')">Home</x-navlink>
+        <x-navlink href="{{route('contact')}}" :active="request()->routeIs('contact')">Contact</x-navlink>
+        <x-navlink href="{{route('about')}}" :active="request()->routeIs('about')">About</x-navlink>
     </ul>
 </nav>
 ```

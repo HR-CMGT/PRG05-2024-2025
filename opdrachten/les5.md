@@ -7,7 +7,7 @@ Bij deze les kan je naast de documentatie van Laravel.com ook gebruik maken van
 
 ## Opdracht - Migration
 
-1. [Creëer de migration](https://laravel.com/docs/11.x/migrations#generating-migrations) zodat de bijbehorende databasetabel wordt aangemaakt. 
+1. [Creëer een migration](https://laravel.com/docs/11.x/migrations#generating-migrations) zodat de bijbehorende databasetabel (kies de hoofdtabel uit je ERD 'games', 'movies', o.i.d.) wordt aangemaakt. 
 2. Open het aangemaakte migration bestand (in de map `database` van je project) en [voeg de velden toe](https://laravel.com/docs/11.x/migrations#creating-tables) die je nodig hebt.
 3. Voer de migration uit in de terminal
    ```

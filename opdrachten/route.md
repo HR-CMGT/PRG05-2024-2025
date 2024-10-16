@@ -17,11 +17,11 @@ Het keyword 'get' na de dubbele punt geeft de actie aan.
 
 ### Opdracht 
 
-- Maak een route voor de 'contact' pagina
+- Maak een route voor de contactpagina
 - Laat de route een view tonen met contactinformatie
 
 ### Opdracht 
-- Zoek uit welke andere optie er mogelijk zijn achter de dubbele punt en wat deze betekenen.
+- Zoek uit welke andere opties er mogelijk zijn achter de dubbele punt en wat deze betekenen.
 
 ## Informatie meegeven aan de View 
 
@@ -65,7 +65,7 @@ extra informatie is die je wilt doorgeven. Dan kan je dit doen door een paramete
 - Maak een nieuwe route aan in `web.php` met `{ }` om de parameter aan te geven
     
   ```php
-    Route::get('products/{name}', function() {
+    Route::get('products/{name}', function(string $name) {
         // code
     });
   ```
