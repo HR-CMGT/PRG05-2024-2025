@@ -1,9 +1,9 @@
 # Les 6
 
-Bij deze les kan je naast de documentatie van Laravel.com ook gebruik maken van https://laracasts.com/series/30-days-to-learn-laravel-11 aflevering 11
+Bij deze les kan je naast de documentatie van Laravel.com ook gebruik maken van 
+https://laracasts.com/series/30-days-to-learn-laravel-11 aflevering 11
 
-In deze les gaan we in een nieuw project starten met het maken van relaties tussen modellen. We gaan kijken naar de
-volgende relaties en passen deze toe in een voorbeeld project
+In deze les gaan we aan de slag met relaties die tussen Modellen kunnen bestaan. Bijvoorbeeld:
 
 - 1-op-veel
     - `Product` heeft meerdere `Reviews`
@@ -16,32 +16,26 @@ Vorig jaar hebben we gezien dat bij een 1-op-veel relatie het nodig was om een *
 Voor de veel-op-veel relatie hebben we een andere oplossing nodig en dat is een **pivot table** (**koppeltabel**).
 Bij het aanmaken van de database moeten we hier dus rekening mee houden.
 
-## Opdracht - ERD
+Om hiermee te oefenen kun je in je eindproject een nieuw `Model` aanmaken dat een relatie zal hebben met een bestaand Model. 
 
-Maak het ERD voor het voorbeeldproject op papier of in een app naar keuze (zoals [Miro](https://miro.com/nl/),
-[Lucidchart](https://www.lucidchart.com/pages/landing) of [draw.io](https://www.drawio.com/)).
+## Opdracht - Maken `Review` Model
 
-- **Teken** de 1-op-veel relatie tussen `Product` en `Review`
-- **Teken** de veel-op-veel relatie tussen `Product` en `Category`
-
-## Opdracht - Maken `Product` Model
-
-1. Maak `Product` Model aan  met behulp van het
+1. Maak `Review` Model aan  met behulp van het
    [Artisan commando](https://laravel.com/docs/11.x/eloquent#generating-model-classes). Maak ook meteen de
    **Migration** en **Resource Controller** aan.
-2. **Voeg** de benodigde velden toe aan de Migrations die je nodig hebt.
+2. **Voeg** de benodigde velden toe aan de Migrations die je nodig hebt. 
 3. Maak de `index`, `create`, `show` pagina's. 
-4. Let er bij het uitwerken van de createpagina op dat je niet zomaar data mag toevoegen aan de database. 
-   In het Model bepaal je wat mag  en niet mag. En dat bepaal je met de property `$fillable` in het 
-   [Model](https://laravel.com/docs/11.x/eloquent#mass-assignment).
+
+### Tips 
+1. Voor het aanmaken van een foreign key relatie kun je 
 
 ## Opdracht - Maken `Review` Model
 
 1. Maak `Review` Model aan met behulp van het
    [Artisan commando](https://laravel.com/docs/11.x/eloquent#generating-model-classes). Maak ook meteen de
    **Migrations** en **Controller** aan (dus geen Resource Controller).
-2. Vul de Migration en voeg de **foreign keys** toe aan de Migrations voor de 1-op-veel relatie. Dit doe je door een 
-   veld toe te voegen met `foreignIdFor()`. Zie [Laravel documentatie](https://laravel.com/docs/11.x/migrations#column-method-foreignIdFor)
+2. Vul de Migration en **Voeg** de benodigde velden toe aan de `Migrations` die je nodig hebt en voeg de **foreign keys** toe voor de 1-op-veel relatie. Dit doe je door een 
+   veld toe te voegen met `foreignId()`. Zie [Laravel documentatie](https://laravel.com/docs/11.x/migrations#column-method-foreignId)
 3. Koppel de `Review` aan de `Product` in het `Model`. Kies hiervoor de juiste relatie in de 
    [Laravel documentatie](https://laravel.com/docs/11.x/eloquent-relationships).
 4. Maak je een foutje met een `Migration`. Je kunt altijd een stap terug met het volgende commando. Let op je moet
@@ -59,13 +53,13 @@ Maak het ERD voor het voorbeeldproject op papier of in een app naar keuze (zoals
 
 1. Zorg ervoor dat je in de `products.show` pagina de reviews van het product toont.
 2. Maak een formulier aan om een review toe te voegen onder de reeds bestaande reviews. 
-   Maak hiervan een [component MET Class](https://laravel.com/docs/11.x/blade#passing-data-to-components). 
+   Hier kun je een [component](https://laravel.com/docs/11.x/blade#passing-data-to-components) van maken. 
 3. Zorg dat je de review kunt opslaan bij het betreffende product en na het opslaan moet je weer terugkeren naar de 
    `products.show` pagina.
 
 ### Tips
 
-- Bij het aanmaken van het `Component` voor het Review formulier kun je extra data meegeven. 
+- Bij het aanmaken van het `Component` voor het reviewformulier kun je extra data meegeven. 
   [Documentatie](https://laravel.com/docs/11.x/blade#passing-data-to-components). Let op dat je hier werkt met een 
   `Prop`.
 - Het Opslaan van een `Review` doe je in de `store` functie van de `ReviewController`. Maak hiervoor een nieuwe route aan
@@ -74,8 +68,7 @@ Maak het ERD voor het voorbeeldproject op papier of in een app naar keuze (zoals
   [Documentatie](https://laravel.com/docs/11.x/requests#retrieving-input). 
 - Om een review op te slaan bij een product, heb je het `id` van het product nodig. 
   Wanneer je deze hebt meegegeven in de `store` functie van de `ReviewController`, kun je de review opslaan bij het
-  betreffende product. Je zal de data wel eerst moeten 
-  [mergen](https://laravel.com/docs/11.x/requests#merging-additional-input)
+  betreffende product. 
 - Met de create functie van een Model kun je een nieuwe instantie van een Model aanmaken. 
   [Documentatie](https://laravel.com/docs/11.x/eloquent-relationships#the-create-method)
 
