@@ -54,8 +54,8 @@ Werk de benodige CRUD-functionaliteit uit.
 
 ### Tips
 
-- Bij het aanmaken van het `Component` voor het reviewformulier kun je [extra data meegeven.] 
-  (https://laravel.com/docs/11.x/blade#passing-data-to-components). Let op dat je hier werkt met een 
+- Bij het aanmaken van het `Component` voor het reviewformulier kun je
+  [extra data meegeven](https://laravel.com/docs/11.x/blade#passing-data-to-components). Maak hier gebruik van een 
   `Prop`.
 - Het Opslaan van een `Review` doe je in de `store` functie van de `ReviewController`. Maak hiervoor een nieuwe route aan
   in de `web.php` file. En bedenk welke extra informatie je nodig hebt om een review op te slaan.
