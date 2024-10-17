@@ -16,8 +16,8 @@ Vorig jaar hebben we gezien dat bij een 1-op-veel relatie het nodig was om een *
 Voor de veel-op-veel relatie hebben we een andere oplossing nodig en dat is een **pivot table** (**koppeltabel**).
 Bij het aanmaken van de database moeten we hier dus rekening mee houden.
 
-Om hiermee te oefenen kun je in je eindproject een nieuw `Model` aanmaken dat een relatie zal hebben met een bestaand Model. 
-Kies een Model dat past bij jouw context. Hieronder een **voorbeeld** van een stappenplan.
+> Om hiermee te oefenen kun je in je eindproject een nieuw `Model` aanmaken dat een relatie zal hebben met een bestaand Model. 
+> Kies een Model dat past bij jouw context. Hieronder een **voorbeeld** van een stappenplan.
 
 ## Opdracht - Maken `Review` Model
 
