@@ -54,18 +54,18 @@ Werk de benodige CRUD-functionaliteit uit.
 
 ### Tips
 
-- Bij het aanmaken van het `Component` voor het reviewformulier kun je extra data meegeven. 
-  [Documentatie](https://laravel.com/docs/11.x/blade#passing-data-to-components). Let op dat je hier werkt met een 
+- Bij het aanmaken van het `Component` voor het reviewformulier kun je [extra data meegeven.] 
+  (https://laravel.com/docs/11.x/blade#passing-data-to-components). Let op dat je hier werkt met een 
   `Prop`.
 - Het Opslaan van een `Review` doe je in de `store` functie van de `ReviewController`. Maak hiervoor een nieuwe route aan
   in de `web.php` file. En bedenk welke extra informatie je nodig hebt om een review op te slaan.
 - Om informatie op te halen uit een formulier gebruik je de `request` class. 
-  [Documentatie](https://laravel.com/docs/11.x/requests#retrieving-input). 
+  [Info op Laravel.com](https://laravel.com/docs/11.x/requests#retrieving-input). 
 - Om een review op te slaan bij een product, heb je het `id` van het product nodig. 
   Wanneer je deze hebt meegegeven in de `store` functie van de `ReviewController`, kun je de review opslaan bij het
   betreffende product. 
-- Met de create functie van een Model kun je een nieuwe instantie van een Model aanmaken. 
-  [Documentatie](https://laravel.com/docs/11.x/eloquent-relationships#the-create-method)
+- Met de `save` functie van een Model kun je het model opslaan in de database. 
+  [Info over INSERT](https://laravel.com/docs/11.x/eloquent#inserts)
 
 ## Opdracht - Verwijder een Product EN de bijbehorende Reviews
 
