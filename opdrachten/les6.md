@@ -17,28 +17,19 @@ Voor de veel-op-veel relatie hebben we een andere oplossing nodig en dat is een 
 Bij het aanmaken van de database moeten we hier dus rekening mee houden.
 
 Om hiermee te oefenen kun je in je eindproject een nieuw `Model` aanmaken dat een relatie zal hebben met een bestaand Model. 
-
-## Opdracht - Maken `Review` Model
-
-1. Maak `Review` Model aan  met behulp van het
-   [Artisan commando](https://laravel.com/docs/11.x/eloquent#generating-model-classes). Maak ook meteen de
-   **Migration** en **Resource Controller** aan.
-2. **Voeg** de benodigde velden toe aan de Migrations die je nodig hebt. 
-3. Maak de `index`, `create`, `show` pagina's. 
-
-### Tips 
-1. Voor het aanmaken van een foreign key relatie kun je 
+Kies een Model dat past bij jouw context. Hieronder een **voorbeeld** van een stappenplan.
 
 ## Opdracht - Maken `Review` Model
 
 1. Maak `Review` Model aan met behulp van het
    [Artisan commando](https://laravel.com/docs/11.x/eloquent#generating-model-classes). Maak ook meteen de
-   **Migrations** en **Controller** aan (dus geen Resource Controller).
-2. Vul de Migration en **Voeg** de benodigde velden toe aan de `Migrations` die je nodig hebt en voeg de **foreign keys** toe voor de 1-op-veel relatie. Dit doe je door een 
+   **Migrations** en **Controller** aan (dit kan een gewone Controller of een Resource Controller zijn, afhankelijk van de context).
+2. Vul de Migration en **Voeg** de benodigde velden toe aan de `Migrations` die je nodig hebt en voeg de **foreign keys** 
+   toe voor de 1-op-veel relatie. Dit doe je door een 
    veld toe te voegen met `foreignId()`. Zie [Laravel documentatie](https://laravel.com/docs/11.x/migrations#column-method-foreignId)
 3. Koppel de `Review` aan de `Product` in het `Model`. Kies hiervoor de juiste relatie in de 
    [Laravel documentatie](https://laravel.com/docs/11.x/eloquent-relationships).
-4. Maak je een foutje met een `Migration`. Je kunt altijd een stap terug met het volgende commando. Let op je moet
+5. Maak je een foutje met een `Migration`. Je kunt altijd een stap terug met het volgende commando. Let op je moet
    de `down` functie in de migration goed hebben gedefinieerd.
    ```
    php artisan migrate:rollback
@@ -51,6 +42,10 @@ Om hiermee te oefenen kun je in je eindproject een nieuw `Model` aanmaken dat ee
 
 ## Opdracht - Voeg reviews toe aan Product
 
+Kies welke CRUD-functionaliteit je nodig hebt voor het nieuwe Model. Bij een `Review` is het bijvoorbeeld handig om 
+alleen de `store` functie te maken, omdat het create formulier op de `product.show` pagina staat. 
+
+Werk de benodige CRUD-functionaliteit uit.
 1. Zorg ervoor dat je in de `products.show` pagina de reviews van het product toont.
 2. Maak een formulier aan om een review toe te voegen onder de reeds bestaande reviews. 
    Hier kun je een [component](https://laravel.com/docs/11.x/blade#passing-data-to-components) van maken. 
