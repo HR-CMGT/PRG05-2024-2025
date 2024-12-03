@@ -16,10 +16,10 @@ en te zorgen dat je een werkende webserver hebt waar je Laravel project kan draa
 
 ## Installatie
 
-[Download de zip](deployment-tle.zip) en pak deze uit in een voor jou logische map. Open je Terminal (mac) of Powershell
+Download de zip en pak deze uit in een voor jou logische map. Open je Terminal (mac) of Powershell
 (Windows) en navigeer naar de map waar je de bestanden hebt gedownload. Als je in de goede map staat
 kun je de bestanden verkregen via docent uploaden naar jullie server. Draai het volgende commando en
-vervang <user> en <ip> met je eigen gegeven (`<>` tekens moeten hier niet meer staan na het aanpassen
+vervang `<user>` en `<ip>` met je eigen gegevens (`<>` tekens moeten hier niet meer staan na het aanpassen
 naar je eigen gegevens):
 
 ```bash
