@@ -84,15 +84,12 @@ zodat de server namens jou op Github kan inloggen
     - Geef als titel "hr-vm-tle1"
     - Laat het vinkje voor write access uitstaan
 
-Run nu het volgende script. Let op, dit doe je **ZONDER** sudo. Je krijgt 3 vragen waarvan de uitleg
-onder het commando staat:
+Run nu het volgende script. Let op, dit doe je **ZONDER** sudo (vul je wachtwoord in voor `sudo` wanneer
+hier tussendoor om wordt gevraagd). Je krijgt 3 vragen waarvan de uitleg onder het commando staat:
 
 ```bash
 ./configure_webserver.sh
 ```
-
-Dit zal ervoor zorgen dat de basis van je webserver goed staat. Vul je wachtwoord in voor `sudo`
-wanneer hier tussendoor om wordt gevraagd. Het script stelt initieel 3 vragen:
 
 - Vraag 1: Vul hier je SSH (!!) github link in (ziet eruit als `git@github.com:<username>/<repo>.git`)
 - Vraag 2: De naam van je project ZONDER spaties of hoofdletters (bv: laravel-chess of open-hiring)
@@ -103,8 +100,8 @@ wanneer hier tussendoor om wordt gevraagd. Het script stelt initieel 3 vragen:
 
 ## Deployen nieuwe versie
 
-Wanneer je een nieuwe release wilt (lees: een nieuwe versie op de main branch) doen op de server kun je
-dit doen door in te loggen via SSH en in je homefolder en `./deploy.sh` te draaien. De nieuwe versie van
+Wanneer je een nieuwe release wilt (lees: de nieuwe versie uit de main branch) doen op de server, kun je
+dit doen door in te loggen via SSH en in je homefolder `./deploy.sh` te draaien. De nieuwe versie van
 je project zou nu zichtbaar moeten zijn op http://\<jouwip>
 
 > Heb je meer nodig in je deployment flow kun je het deploy script natuurlijk aanpassen.
@@ -123,7 +120,7 @@ toe te voegen slaan we voor nu over.
 > **DIT DOEN WE OM DE KLANT TE BESCHERMEN EN GEEN WILDGROEI AAN DOMEINEN
 > TE KRIJGEN DIE HELEMAAL NIET VAN EEN ECHTE OPDRACHTGEVER ZIJN**
 
-Mocht je hier voor privéproject zelf in willen duiken kun je de onderste toegevoegde bron gebruiken.
+Mocht je hier voor een privéproject zelf in willen duiken kun je de onderste toegevoegde bron gebruiken.
 
 ## Bronnen
 
