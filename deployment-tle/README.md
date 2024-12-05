@@ -50,7 +50,7 @@ chmod u+x install_tools.sh configure_webserver.sh deploy.sh
 Run nu het eerste script als volgt:
 
 ```bash
-sudo ./install_tools.sh
+./install_tools.sh
  ```
 
 Hiermee worden alle noodzakelijke tools geïnstalleerd op de server. Het commando`sudo` geeft je
