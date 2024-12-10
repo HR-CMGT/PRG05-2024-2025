@@ -106,10 +106,35 @@ je project zou nu zichtbaar moeten zijn op http://\<jouwip>
 
 > Heb je meer nodig in je deployment flow kun je het deploy script natuurlijk aanpassen.
 > Denk hierbij aan extra artisan commando's omdat je bijvoorbeeld een db:seed wilt doen.
-> Je kunt dit natuurlijk ook handmatig in de `/var/www/production` folder doen (Denk aan
-> aanpassing van je .env bestand), let hier dan wel op de rechten van de folder. Mocht dit
-> misgaan kun je altijd `sudo -u www-data` voor je commando neerzetten. (Bijvoorbeeld:
-> `sudo -u www-data php artisan db:seed`)
+
+### Extra tips:
+
+- Via `scp` kun je ook handmatig bestanden uploaden. Denk aan het overschrijven van je Database omdat
+  je lokaal al een mooi gevulde database hebt en geen zin hebt dat werk opnieuw te moeten doen.
+    - Dit kun je dan doen door je bestand te uploaden naar je homefolder en daarna te verplaatsen
+      naar je production database:
+
+```bash
+#Lokaal in terminal phpstorm
+scp database/database.sqlite <user>@<ip>:/home/<user>/
+
+#Op de server zelf:
+cp database.sqlite /var/www/production/database/
+```
+
+- Je database kun je wel handmatig bewerken en inzien door `sqlite3 database.sqlite` te draaien. Dan
+  kom je in een interface waar je queries kunt schrijven om met je database te communiceren.
+- Op de server kun je handmatig je .env bestand aanpassen via nano: `nano .env`. Daarin kun je
+  met `ctrl+x` nano afsluiten en wijzigingen opslaan. Let er op dat je wel in je `/var/www/production`
+  map zit bij het uitvoeren van dit commando.
+- Wil je liever een GUI? Dan kun je ook bestanden uploaden via SFTP (bv: FileZilla). Daar kun je met
+  dezelfde gegevens verbinden en bestanden slepen naar de juiste map. Hou er wel rekening mee
+  dat je minder controle hebt als er iets mis is qua rechten en je dan alsnog een SSH-verbinding
+  nodig hebt.
+    - Denk hierbij aan een foutmelding waarbij je niet mag doen wat je wilt doen omdat je geen rechten
+      hebt onder je eigen account. Door je commando te prefixen met de juiste user kan het wel werken.
+      Bijvoorbeeld: `sudo -u www-data php artisan db:seed`
+    - Gebruik deze optie dus enkel voor het snel uploaden van bestanden!
 
 ## NIET DOEN: Domein met SSL Certificaat
 
