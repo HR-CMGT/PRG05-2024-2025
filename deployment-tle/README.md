@@ -1,5 +1,16 @@
 # Installatie & Deployment Laravel
 
+- [Introductie](#introductie)
+    - [Voor je aan de slag gaat](#let-op-voor-je-aan-de-slag-gaat)
+- [Installatie](#installatie)
+- [Configuratie webserver](#configuratie-webserver)
+- [Deployen nieuwe versie](#deployen-nieuwe-versie)
+    - [Extra tips](#extra-tips)
+- [NIET DOEN: SSL](#niet-doen-domein-met-ssl-certificaat)
+- [Bronnen](#bronnen)
+
+## Introductie
+
 Om je project op een onlineomgeving te krijgen ga je werken met een VPS. Als team heb
 je deze aangevraagd via school, maar je kunt ook een eigen serveromgeving gebruiken.
 
@@ -107,7 +118,7 @@ je project zou nu zichtbaar moeten zijn op http://\<jouwip>
 > Heb je meer nodig in je deployment flow kun je het deploy script natuurlijk aanpassen.
 > Denk hierbij aan extra artisan commando's omdat je bijvoorbeeld een db:seed wilt doen.
 
-### Extra tips:
+### Extra tips
 
 - Via `scp` kun je ook handmatig bestanden uploaden. Denk aan het overschrijven van je Database omdat
   je lokaal al een mooi gevulde database hebt en geen zin hebt dat werk opnieuw te moeten doen.
